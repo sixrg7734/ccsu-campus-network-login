@@ -1,0 +1,33 @@
+{
+  "_comment": "Example config / 配置样例。复制成 campus-net.config.json 再改，或者直接跑 Setup-CampusNet.ps1 自动生成。",
+  "_warning": "Do NOT put a real password in PwdPlain. Use Setup-CampusNet.ps1, which stores DPAPI-encrypted PwdEnc instead. / 不要把真密码写进 PwdPlain。",
+
+  "LoginUrl": "http://10.5.255.254/portal",
+  "PortalUrl": "",
+
+  "Mode": "Auto",
+  "UserField": "username",
+  "PwdField": "password",
+  "PwdTransform": "plain",
+  "PwdTemplate": "{pwd}",
+  "TokenRegex": "",
+  "ExtraFields": null,
+  "Headers": null,
+
+  "User": "2023000000",
+  "UserSuffix": "",
+  "PwdEnc": "",
+  "PwdPlain": "",
+
+  "WifiProfile": "CampusWiFi",
+
+  "SuccessTestUrl": "http://connect.rom.miui.com/generate_204",
+  "SuccessStatus": 204,
+  "SuccessRegex": "",
+
+  "AllowInvalidCert": false,
+
+  "RetryCount": 6,
+  "RetryDelaySec": 10,
+  "LogFile": ""
+}
