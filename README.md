@@ -397,8 +397,6 @@ Get-ScheduledTaskInfo -TaskName 'CampusNet-Autoconnect' | Select LastRunTime, La
    请不要只靠肉眼看；
 3. 确认 `.ps1` 是 UTF-8 带 BOM。
 
-如果你成功适配了某个具体学校的门户，欢迎把配置片段（**去掉账号密码**）提 PR 或开 issue，
-方便同校的同学直接抄。
 
 ---
 
