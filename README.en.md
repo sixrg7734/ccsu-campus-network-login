@@ -1,6 +1,6 @@
 <div align="center">
 
-# Campus Net Autoconnect
+# CCSU Campus Net Autoconnect
 
 Completes your campus network's web portal login automatically after you log into Windows.
 
@@ -19,7 +19,7 @@ English · [简体中文](README.md)
 
 ## Overview
 
-Most university campus networks use web portal authentication: you join the Wi-Fi, the browser opens a login page, you enter your student ID and password, and only then do you get internet access. This repeats on every boot.
+CCSU networks use web portal authentication: you join the Wi-Fi, the browser opens a login page, you enter your student ID and password, and only then do you get internet access. This repeats on every boot.
 
 This project automates that step. It fills in and submits the login form, then reads back to confirm the network is actually up, retrying as configured if it is not. The script makes no assumptions about the portal's structure: it detects the portal redirect at runtime and parses the real field names and hidden parameters (such as `wlanuserip`, `wlanacname`, `nasip`) out of the login page HTML. Adapting it to another school usually means editing the config only.
 
